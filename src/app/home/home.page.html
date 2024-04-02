@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+  <!-- home page also contans DashBoad as button About us as button
+Help as Button and Contact us as button.Logout button it can back
+to login page again. -->
+  <ion-button>DashBoad</ion-button>
+  <br>
+  <ion-button>About us</ion-button>
+  <br>
+  <ion-button>Help</ion-button>
+  <br>
+  <ion-button>Contact us</ion-button>
+  <br>
+
+  <ion-button (click)="login()">login</ion-button>
+  <br>
+  <ion-button (click)="register()">register</ion-button>
+  <br>
+  <p>{{ text }}</p>
+  <ion-button (click)="changeText()">change text</ion-button>
+</ion-content>
